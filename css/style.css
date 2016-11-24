@@ -21,23 +21,30 @@
 
 
 li.menu-item:hover {
-	background-color: red;
+	background-color: #0f42a0;
 }
 
 
 li.menu-item:hover ul.submenu {
-	display: flex;
+	height: 140px;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.2s ease-out;
+	
 } 
 
 .submenu {
-	display: none;
+	display: flex;
 	position: absolute;
 	background-color: #0098ff;
 	color: #fff;
 	top: 40px;
 	left: 0;
+	height:0;
+	visibility: hidden;
 	flex-direction: column;
-	min-width: 150px;
+	transition: all 0.2s;
+	width: 140px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -61,3 +68,4 @@ li.menu-item:hover ul.submenu {
 	background-color: #ffe800;
 	color: #000;
 }
+
