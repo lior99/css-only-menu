@@ -1,5 +1,5 @@
 .menu {
-	display: flex;		
+	display: flex;
 }
 
 .menu li.menu-item {
@@ -22,6 +22,8 @@
 
 li.menu-item:hover {
 	background-color: #0f42a0;
+	opacity: 1;
+	transition: 0.4s;
 }
 
 
@@ -30,8 +32,8 @@ li.menu-item:hover ul.submenu {
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.2s ease-out;
-	
-} 
+
+}
 
 .submenu {
 	display: flex;
@@ -68,4 +70,3 @@ li.menu-item:hover ul.submenu {
 	background-color: #ffe800;
 	color: #000;
 }
-
